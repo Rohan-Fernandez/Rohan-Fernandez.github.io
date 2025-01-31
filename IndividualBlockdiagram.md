@@ -1,8 +1,6 @@
 ---
-title: Welcome
-tags:
-- tag1
-- tag2
+Rohan Fernandez
+EGR 314 - Team 311
 ---
 
 ## Here is the block diagram for user interface, my sub-section:
