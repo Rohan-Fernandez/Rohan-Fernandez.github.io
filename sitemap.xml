@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://embedded-systems-design.github.io/template_report/IndividualBlockdiagram/</loc>
+         <lastmod>2025-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/template_report/charts/</loc>
          <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
