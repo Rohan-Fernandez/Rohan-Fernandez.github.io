@@ -8,7 +8,7 @@ Part 1: Component Selection
 
 1. PIC16F15213T
 
-    Image
+    <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC16F15213T.jpg?raw=true">
 
     * $0.50/each
     * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572)
@@ -21,7 +21,7 @@ Part 1: Component Selection
 
 2. PIC18F27Q10-I/SO
 
-    Image
+    <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC18F27Q10.jpg?raw=true">
 
     * $1.45/each
     * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)
@@ -34,7 +34,7 @@ Part 1: Component Selection
 
 3. PIC18F14Q20-I/SS
 
-    <Image
+    <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC18F14Q20.jpg?raw=true">
    
     * $0.92/each
     * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F14Q20-I-SS/24617052)
