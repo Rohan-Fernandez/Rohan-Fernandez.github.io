@@ -1,8 +1,71 @@
 ---
 title: Individual_Component_Selection.
 ---
+---
+Part 1: Component Selection
+---
+**PIC Microcontrollers**
 
-PIC Selection:
+1. PIC16F15213T
+
+    Image
+
+    * $0.50/each
+    * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Supports UART and I2C                     | Will be difficult to solder due to size and type            |
+    | Very small and cost effective             | Not flexible for project changes or errors                  |
+    | Meets surface mount requirements |
+
+2. PIC18F27Q10-I/SO
+
+    Image
+
+    * $1.45/each
+    * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Supports UART and I2C                     | Will need its specs to be closely monitored in the datasheet (specific voltages, etc.) |
+    | Good memory and general specs             | Chip's length might create spacing concerns                                         |
+    | Surface mount version to meet project requriements, more space-economical than 40 pin version |
+
+3. PIC18F14Q20-I/SS
+
+    <Image
+   
+    * $0.92/each
+    * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F14Q20-I-SS/24617052)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Supports UART and I2C                     | Small amount of memory, can pose serious issues, especially with the already fairly slow I2C |
+    | Very cost-effective                       | Comparitively lower capabilities                     |
+    | Meets surface mount constraint of project | Described as a new component, may be buggier than more tested/older ones
+
+
+**Choice:** Option 2: PIC18F27Q10-I/SO
+
+**Rationale:** The PIC18F27Q10 was selected due to it being cost-effective while also providing solid capabilities compared to the other options. The 28 pins will allow for potetntial additions as the project's inclusions are adjusted and it meets my sub-system's specific need for I2C (for a screen interface).
+
+**Display Screens**
+1. 
+ Image
+
+    * $0.50/each
+    * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Supports UART and I2C                     | Will be difficult to solder due to size and type            |
+    | Very small and cost effective             | Not flexible for project changes or errors                  |
+    | Meets surface mount requirements |
+
+
+
+Part 2 Microcontroller (PIC) Selection:
 | PIC Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
 | Model                                         | PIC18F27Q10 | Include the entire part number (leave off any letters at the end that specify the package type)           |
@@ -25,7 +88,7 @@ PIC Selection:
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       | ?           | ?      | ?                              |
+| GPIO       | 25           | 3      | ?                              |
 | ADC        | ?           | ?      | ?                              |
 | UART       | ?           | ?      | ?                              |
 | SPI        | ?           | ?      | ?                              |
@@ -34,4 +97,4 @@ PIC Selection:
 | ICSP       | ?           | 1      | ?                              |
 | ...        | ...         | ...    | ...                            |
 
-Core component selection
+
