@@ -100,7 +100,47 @@ Part 1: Component Selection
 
 **Push-Buttons**
 
-1. 
+1. 3491 (Adafruit Pushbutton)
+
+Image
+
+ * $2.50/each
+ * [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-14460/7915747)
+    
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Includes a built-in LED, making it easier to identify the button's state | Rather expensive cost per button           |
+| Larger button for easier pressing          | The LED light is dimmer when run at 3.3 V |
+| Works with a decent range of voltages, so no specific regulation is required |
+
+2. PRT-14460 (Spark-fun Electronics)
+
+Image
+
+ * $1.75 per pack: $0.44 per button
+ * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3491/7349497)
+    
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Very inexpensive | Datasheet with very minimal information          |
+| Each button is a different color to distingush between functions | Buttons might be a bit small and difficult for accurate pressing|
+| 4 are in each pack, so there's potentially one spare |
+
+3. 1010 (Adafruit square button pack)
+
+Image
+
+ * $5.95 per pack: $0.40 per button
+ * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1010/7244937)
+    
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Square buttons that are easy to press, so a young student can easily press/use them | Datasheet with very little useful information   |
+| Multiple colors and many spares | Only comes in a large pack, so more buttons than needed and higher cost, despite low cost per button|
+
+**Choice:** Option 2: PRT-14460 (Spark-fun Electronics)
+
+**Rationale:** These buttons are the best choice for the purposes of this project due to their low cost, as this component is not particularly important to the workings of the project, with others needing to take higher priority, though colored buttons would help its overall cohesion and presentation.
 
 
 ---
