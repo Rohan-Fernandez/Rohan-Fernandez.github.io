@@ -102,7 +102,8 @@ Part 1: Component Selection
 
 1. 3491 (Adafruit Pushbutton)
 
-Image
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/MFG_3491.jpg?raw=true">
+
 
  * $2.50/each
  * [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-14460/7915747)
@@ -115,7 +116,7 @@ Image
 
 2. PRT-14460 (Spark-fun Electronics)
 
-Image
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PRT-14460.jpg?raw=true">
 
  * $1.75 per pack: $0.44 per button
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3491/7349497)
@@ -128,7 +129,7 @@ Image
 
 3. 1010 (Adafruit square button pack)
 
-Image
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/1010.jpg?raw=true">
 
  * $5.95 per pack: $0.40 per button
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1010/7244937)
