@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#part-1-component-selection" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -400,6 +405,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Individual_Component_Selection.
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -409,6 +425,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-component-selection" class="md-nav__link">
+    Part 1: Component Selection
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -513,6 +553,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-component-selection" class="md-nav__link">
+    Part 1: Component Selection
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -536,7 +591,116 @@
 
   <h1>Individual_Component_Selection.</h1>
 
-<p>PIC Selection:
+<hr />
+<h2 id="part-1-component-selection">Part 1: Component Selection</h2>
+<p><strong>PIC Microcontrollers</strong></p>
+<ol>
+<li>
+<p>PIC16F15213T</p>
+<p>Image</p>
+<ul>
+<li>$0.50/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572">link</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supports UART and I2C</td>
+<td>Will be difficult to solder due to size and type</td>
+</tr>
+<tr>
+<td>Very small and cost effective</td>
+<td>Not flexible for project changes or errors</td>
+</tr>
+<tr>
+<td>Meets surface mount requirements</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>PIC18F27Q10-I/SO</p>
+<p>Image</p>
+<ul>
+<li>$1.45/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343">link</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supports UART and I2C</td>
+<td>Will need its specs to be closely monitored in the datasheet (specific voltages, etc.)</td>
+</tr>
+<tr>
+<td>Good memory and general specs</td>
+<td>Chip's length might create spacing concerns</td>
+</tr>
+<tr>
+<td>Surface mount version to meet project requriements, more space-economical than 40 pin version</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>PIC18F14Q20-I/SS</p>
+<p>&lt;Image</p>
+<ul>
+<li>$0.92/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F14Q20-I-SS/24617052">link</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supports UART and I2C</td>
+<td>Small amount of memory, can pose serious issues, especially with the already fairly slow I2C</td>
+</tr>
+<tr>
+<td>Very cost-effective</td>
+<td>Comparitively lower capabilities</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td>Described as a new component, may be buggier than more tested/older ones</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Choice:</strong> Option 2: PIC18F27Q10-I/SO</p>
+<p><strong>Rationale:</strong> The PIC18F27Q10 was selected due to it being cost-effective while also providing solid capabilities compared to the other options. The 28 pins will allow for potetntial additions as the project's inclusions are adjusted and it meets my sub-system's specific need for I2C (for a screen interface).</p>
+<p><strong>Display Screens</strong>
+1. 
+ Image</p>
+<pre><code>* $0.50/each
+* [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572)
+
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Supports UART and I2C                     | Will be difficult to solder due to size and type            |
+| Very small and cost effective             | Not flexible for project changes or errors                  |
+| Meets surface mount requirements |
+</code></pre>
+<p>Part 2 Microcontroller (PIC) Selection:
 | PIC Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
 | Model                                         | PIC18F27Q10 | Include the entire part number (leave off any letters at the end that specify the package type)           |
@@ -567,8 +731,8 @@
 <tbody>
 <tr>
 <td>GPIO</td>
-<td>?</td>
-<td>?</td>
+<td>25</td>
+<td>3</td>
 <td>?</td>
 </tr>
 <tr>
@@ -615,7 +779,6 @@
 </tr>
 </tbody>
 </table>
-<p>Core component selection</p>
 
 
 
