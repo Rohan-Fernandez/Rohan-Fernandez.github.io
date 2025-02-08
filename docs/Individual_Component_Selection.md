@@ -118,7 +118,7 @@ Part 1: Component Selection
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PRT-14460.jpg?raw=true">
 
- * $1.75 per pack: $0.44 per button
+ * $1.75 per pack, $0.44 per button
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3491/7349497)
     
 | Pros                                      | Cons                                                             |
@@ -131,7 +131,7 @@ Part 1: Component Selection
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/1010.jpg?raw=true">
 
- * $5.95 per pack: $0.40 per button
+ * $5.95 per pack, $0.40 per button
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1010/7244937)
     
 | Pros                                      | Cons                                                             |
