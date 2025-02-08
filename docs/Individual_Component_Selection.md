@@ -51,18 +51,21 @@ Part 1: Component Selection
 **Rationale:** The PIC18F27Q10 was selected due to it being cost-effective while also providing solid capabilities compared to the other options. The 28 pins will allow for potetntial additions as the project's inclusions are adjusted and it meets my sub-system's specific need for I2C (for a screen interface).
 
 **Display Screens**
-1. 
+
+1. NHD-C0220BIZ-FS(RGB)-FBW-3VM
+ 
  Image
 
-    * $0.50/each
-    * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572)
+    * $14.46/each
+    * [link]([https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C0220BIZ-FS-RGB-FBW-3VM/3507740))
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Supports UART and I2C                     | Will be difficult to solder due to size and type            |
-    | Very small and cost effective             | Not flexible for project changes or errors                  |
-    | Meets surface mount requirements |
+    | Specifically designed for I2C             | Fairly expensive, especially if multiple needed              |
+    | Good Datasheet with accessible key commands  | Shipping could be a problem, espeically with added tariff |
+    | RGB backgrounds to make text appear more clearly | 
 
+2. 
 
 ---
 Part 2 Microcontroller (PIC) Selection:
@@ -95,7 +98,7 @@ Part 2 Microcontroller (PIC) Selection:
 | SPI        | ?           | ?      | ?                              |
 | I2C        | ?           | ?      | ?                              |
 | PWM        | ?           | ?      | ?                              |
-| ICSP       | ?           | 1      | ?                              |
+| ICSP       | 2           | 1      | ?                              |
 | ...        | ...         | ...    | ...                            |
 
 
