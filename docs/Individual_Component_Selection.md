@@ -1,5 +1,5 @@
 ---
-title: Individual_Component_Selection.
+title: Individual Component Selection
 ---
 Part 1: Component Selection
 ---
@@ -55,7 +55,7 @@ Part 1: Component Selection
 
 1. NHD-C0220BIZ-FS(RGB)-FBW-3VM
 
- Image
+ <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/MFG_NHD-C0220BiZ-FS(RGB)-FBW-3VM.jpg?raw=true">
 
 * $14.46/each
 * [link](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C0220BIZ-FS-RGB-FBW-3VM/3507740)
@@ -68,7 +68,7 @@ Part 1: Component Selection
 
 2. AMC0802BR-B-Y6WFDY-I2C
 
-Image
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/AMC0802BR-B-Y6WFDY-I2C.jpg?raw=true">
 
  * $8.49/each
  * [link](https://www.digikey.com/en/products/detail/orient-display/AMC0802BR-B-Y6WFDY-I2C/22531880)
@@ -81,7 +81,7 @@ Image
 
 3. NHD-0216AW-IB3
 
-Image
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/NHD-0216AW-IB3.jpg?raw=true">
 
  * $28.49/each
  * [link](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216AW-IB3/6198749)
