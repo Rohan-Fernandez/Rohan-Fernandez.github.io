@@ -1,20 +1,10 @@
 ---
 title: Welcome
-tags:
-- tag1
-- tag2
+
 ---
 
-## Hello, my name is Rohan Fernandez
+##  Rohan Fernandez
+## EGR 314 Individual Page
 
-* first list item
-* second list item
+* Refer to the Tabs at the top of the page to see individual assignments or project parts
 
-Name | Description
----- | -----------
-EGR  | 314
-
-## Procedures
-1. Step 1 
-2. Step 2
-3. Step 3
