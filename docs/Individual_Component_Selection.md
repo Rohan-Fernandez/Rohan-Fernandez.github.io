@@ -41,7 +41,7 @@ Part 1: Component Selection
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Supports UART and I2C                     | Small amount of memory, can pose serious issues, especially with the already fairly slow I2C |
+    | Supports UART and I2C, also similar to what was used in class| Small amount of memory, can pose serious issues, especially with the already fairly slow I2C |
     | Very cost-effective                       | Comparitively lower capabilities                     |
     | Meets surface mount constraint of project | Described as a new component, may be buggier than more tested/older ones
 
