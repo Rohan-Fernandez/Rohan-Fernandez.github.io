@@ -64,8 +64,9 @@ Part 1: Component Selection
     | Meets surface mount requirements |
 
 
-
+---
 Part 2 Microcontroller (PIC) Selection:
+---
 | PIC Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
 | Model                                         | PIC18F27Q10 | Include the entire part number (leave off any letters at the end that specify the package type)           |
