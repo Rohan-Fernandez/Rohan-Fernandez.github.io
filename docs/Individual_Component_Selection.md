@@ -53,19 +53,52 @@ Part 1: Component Selection
 **Display Screens**
 
 1. NHD-C0220BIZ-FS(RGB)-FBW-3VM
- 
+
  Image
 
     * $14.46/each
-    * [link]([https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C0220BIZ-FS-RGB-FBW-3VM/3507740))
-
+    * [link](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C0220BIZ-FS-RGB-FBW-3VM/3507740)
+    
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Specifically designed for I2C             | Fairly expensive, especially if multiple needed              |
     | Good Datasheet with accessible key commands  | Shipping could be a problem, espeically with added tariff |
     | RGB backgrounds to make text appear more clearly | 
 
-2. 
+2. AMC0802BR-B-Y6WFDY-I2C
+
+Image
+
+    * $8.49/each
+    * [link](https://www.digikey.com/en/products/detail/orient-display/AMC0802BR-B-Y6WFDY-I2C/22531880)
+    
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Specifically designed for I2C             | Much less display space compared to other options            |
+    | Cost effective                            | Might require separate voltage regulation from other parts (higher voltage) |
+    | Physically smaller (less space on board) | 
+
+3. NHD-0216AW-IB3
+
+Image
+
+    * $28.49/each
+    * [link](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216AW-IB3/6198749)
+    
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Specifically designed for I2C             | Very expensive, can likely one order one            |
+    | Wide voltage range                        | No Backlight is included |
+    | More visually pleasing OLED Screen, rather than a more simplistic LCD |
+
+**Choice:** Option 1: NHD-C0220BIZ-FS(RGB)-FBW-3VM
+
+**Rationale:** The NHD-C0220BIZ-FS(RGB)-FBW-3VM was selected due to it being a good balance of cost and effectiveness, as it has fairly solid display capapbilities and should be able to show important data while also being able to be smoothly integrated with the rest of the system (voltage, spacing, I2C, etc.).
+
+**Push-Buttons**
+
+1. 
+
 
 ---
 Part 2 Microcontroller (PIC) Selection:
