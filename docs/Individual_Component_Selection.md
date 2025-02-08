@@ -166,9 +166,9 @@ Part 2 Microcontroller (PIC) Selection:
 | Works with MPLabX?                            | Yes     | Required.  See [Microchip Development Tools](https://www.microchip.com/development-tools)                 |
 | Works with Microchip Code Configurator?       | Refer to Screenshot Below      | Can be validated in MPLabX.  Screenshot required.                                                         |
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC_Pinout.png?raw=true">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/V2PIC_Pinout.png?raw=true">
 
-As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 3 GPIOs  configured to input, which represent the 3 buttons that will be involved with user controlled motor movement. A 4th might be added depending on available resources in other parts of the project, for more dynamic side to side motion, which is doable by just adding one extra GPIO button pin. 
+As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 3 GPIOs (RA1, RA2, RA3)vconfigured to input, which represent the 3 buttons that will be involved with user controlled motor movement. A 4th might be added depending on available resources in other parts of the project, for more dynamic side to side motion, which is doable by just adding one extra GPIO button pin. Additonally UART pins ar present to account for communication between devices in the project.
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
