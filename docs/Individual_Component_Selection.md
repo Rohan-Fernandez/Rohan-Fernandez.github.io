@@ -172,13 +172,13 @@ As shown in the above screenshot, in mplabx I was able to set up the currently n
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       | 25           | 3      | ?                              |
-| ADC        | ?           | ?      | ?                              |
-| UART       | ?           | ?      | ?                              |
-| SPI        | ?           | ?      | ?                              |
-| I2C        | ?           | ?      | ?                              |
-| PWM        | ?           | ?      | ?                              |
-| ICSP       | 2           | 1      | ?                              |
+| GPIO       | 24           | 3      | RA1, RA2, RA3                              |
+| ADC        | 24          | 0      | NA                             |
+| UART       | 2           | 1      | RC6, RC7                              |
+| SPI        | 2           | 0      | NA                             |
+| I2C        | 2           | 1      | RC3, RC4                             |
+| PWM        | 2           | 0      | NA                             |
+| ICSP       | 2           | 1      | MCLR = RE3 (and RB6, RB7)                             |
 | ...        | ...         | ...    | ...                            |
 
 
