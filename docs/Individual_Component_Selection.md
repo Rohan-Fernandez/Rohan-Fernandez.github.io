@@ -106,7 +106,7 @@ Part 1: Component Selection
 
 
  * $2.50/each
- * [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-14460/7915747)
+ * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3491/7349497)
     
 | Pros                                      | Cons                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -119,7 +119,7 @@ Part 1: Component Selection
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PRT-14460.jpg?raw=true">
 
  * $1.75/pack, $0.44/button
- * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3491/7349497)
+ * [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-14460/7915747)
     
 | Pros                                      | Cons                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------- |
