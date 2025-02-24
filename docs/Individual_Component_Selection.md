@@ -105,7 +105,7 @@ Part 1: Component Selection
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/MFG_3491.jpg?raw=true">
 
 
- * $2.50/each
+ * $ 2.50 / each
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/3491/7349497)
     
 | Pros                                      | Cons                                                             |
@@ -118,7 +118,7 @@ Part 1: Component Selection
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PRT-14460.jpg?raw=true">
 
- * $1.75/pack, $0.44/button
+ * $ 1.75 / pack, $ 0.44/button
  * [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-14460/7915747)
     
 | Pros                                      | Cons                                                             |
@@ -131,7 +131,7 @@ Part 1: Component Selection
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/1010.jpg?raw=true">
 
- * $5.95/pack, $0.40/button
+ * $ 5.95 / pack, $ 0.40 / button
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1010/7244937)
     
 | Pros                                      | Cons                                                             |
@@ -143,6 +143,47 @@ Part 1: Component Selection
 
 **Rationale:** These buttons are the best choice for the purposes of this project due to their low cost, as this component is not particularly important to the workings of the project, with others needing to take higher priority, though colored buttons would help its overall cohesion and presentation.
 
+**Voltage Regulators** 
+1. LM2575-3.3WU
+
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LM2575.jpg?raw=true">
+
+* $1.75 / each
+* [link](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)
+
+|Pros                                      |Cons                                                             |
+| -----------------------------------------| ----------------------------------------------------------------|
+|Meets project requirements with fairly easy implementation | Might have issues if higher current applications are needed          |
+| Can work with a large variety of input voltages | Slightly less efficient than some other options|
+| Prior experience in working with variants of it |
+
+2.  LM2674M-3.3
+
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LM2674M_3.3.jpg?raw=true">
+
+* $ 3.97 / each
+* [link](https://www.digikey.com/en/products/detail/texas-instruments/LM2674M-3-3-NOPB/287129)
+
+|Pros                                      |Cons                                                             |
+| -----------------------------------------| ----------------------------------------------------------------|
+|High efficiency  | Relatively high per unit cost |
+|Designed to function with minimal outside componentss | Very low maximum current ratings compared to other options|
+
+3. LMR51430YFDDCR
+
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LMR51430YFDDCR.jpg?raw=true">
+
+* $ 1.29 / each
+* [link](https://www.digikey.com/en/products/detail/texas-instruments/LMR51430YFDDCR/17878338)
+
+|Pros                                      | Cons                                                             |
+| -----------------------------------------| ---------------------------------------------------------------- |
+|Cost Effective while also providing good specs (max current, etc) |Adjustable, thus it may not be optimized for the specific 3.3 V that will be needed for the circuit (less efficient, etc)        |
+| Small size, won’t take up much space on a PCB | Inconsistencies in accuracy could be problematic for more sensitive components|
+
+Choice:  Option 1 - LM2575-3.3WU
+
+Explanation: Due to familiarity with this type of  voltage regulator and it meeting the needs for the user interface system, it has been selected as this system’s voltage regulator. The other chosen components should work with this voltage regulator in regards to power requirements and this in combination with it seeming more suitable than the other reviewed options make it the best choice of these three options.
 
 ---
 Part 2 Microcontroller (PIC) Selection:
