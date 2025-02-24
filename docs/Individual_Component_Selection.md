@@ -144,6 +144,7 @@ Part 1: Component Selection
 **Rationale:** These buttons are the best choice for the purposes of this project due to their low cost, as this component is not particularly important to the workings of the project, with others needing to take higher priority, though colored buttons would help its overall cohesion and presentation.
 
 **Voltage Regulators** 
+
 1. LM2575-3.3WU
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LM2575.jpg?raw=true">
