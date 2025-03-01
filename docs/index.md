@@ -4,6 +4,7 @@ title: Welcome
 ---
 
 ## EGR 314 Individual Page - Rohan Fernandez
+Link to Team 311 Page: [link](https://egr314-2025-s-311.github.io/T311.github.io/)
 ---
 Introduction: 
 ---
