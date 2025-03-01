@@ -210,7 +210,7 @@ Part 2 Microcontroller (PIC) Selection:
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Pinout_CompDemo_Rev3.png?raw=true">
 
-As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 4 GPIOs (RA1, RA2, RA3, RA4) configured to input, which represent the 4 buttons that will be involved with user controlled motor movement. The two other GPIOs which are configured to output are for the LCD's clear function and a testing LED. Additonally UART pins are present to account for communication between devices in the project.
+As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 4 GPIOs (RA1, RA2, RA3, RA4) configured to input, which represent the 4 buttons that will be involved with user controlled motor movement. The two other GPIOs which are configured to output are for the LCD's clear function and a testing LED. Additonally UART pins are present to account for communication between devices in the project. As the project progresses, extra GPIOs might be used as well, which isn't a problem, as there are plenty to spare.
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
