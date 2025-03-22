@@ -1,9 +1,8 @@
-----------
-Title: API
+## API
 ----------
 
-## Message Type 1: Toggle Manual/automatic modes (button controlled toggle)
-* This will decide if the sensor data or button data drives the motors
+## Message Type 1: Toggle Manual/automatic modes
+* Button controlled toggle that will decide if the sensor data or button data drives the motors
 
 |               | Byte 1      |  
 |---------------|-------------|
@@ -27,7 +26,9 @@ Title: API
 | Example       | "V"              | "3.300"           |
 
 
-## Message Type 5: Directional button data transmission for left/right manual motor control
+## Message Type 5: Directional button data transmission
+* allows for left/right manual motor control if manual mode is on
+
 |               | Byte 1      | Byte 2       |
 |---------------|-------------|--------------|
 | Variable Name | button_left | button_right |
