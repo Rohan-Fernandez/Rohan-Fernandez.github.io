@@ -2,7 +2,7 @@
 ----------
 
 ## Message Type 1: Toggle Manual/automatic modes
-* Button controlled toggle that will decide if the sensor data or button data drives the motors
+* Incoming toggle data that will decide if the sensor data or button data drives the motors
 
 |               | Byte 1      |  
 |---------------|-------------|
