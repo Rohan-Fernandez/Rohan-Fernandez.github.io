@@ -2,47 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://rohan-fernandez.github.io/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rohan-fernandez.github.io/API/</loc>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/BOM/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/Individual_Block_diagram/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/Individual_Component_Selection/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/Power_Budget/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/UI_Individual_Schematic/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/static/node_modules/mathjax/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/subfolder/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/subfolder/another-subfile/</loc>
-         <lastmod>2025-03-01</lastmod>
+         <lastmod>2025-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
