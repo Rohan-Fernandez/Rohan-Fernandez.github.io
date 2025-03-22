@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api" class="md-skip">
+        <a href="#sent-messages" class="md-skip">
           Skip to content
         </a>
       
@@ -455,29 +455,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    API
+  <a href="#sent-messages" class="md-nav__link">
+    Sent Messages:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#message-type-1-toggle-manualautomatic-modes" class="md-nav__link">
-    Message Type 1: Toggle Manual/automatic modes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message-type-3-voltage-readings-for-display" class="md-nav__link">
-    Message Type 3: Voltage Readings for display
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message-type-5-directional-button-data-transmission" class="md-nav__link">
-    Message Type 5: Directional button data transmission
+  <a href="#kept-messages" class="md-nav__link">
+    Kept Messages:
   </a>
   
 </li>
@@ -653,29 +639,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    API
+  <a href="#sent-messages" class="md-nav__link">
+    Sent Messages:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#message-type-1-toggle-manualautomatic-modes" class="md-nav__link">
-    Message Type 1: Toggle Manual/automatic modes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message-type-3-voltage-readings-for-display" class="md-nav__link">
-    Message Type 3: Voltage Readings for display
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message-type-5-directional-button-data-transmission" class="md-nav__link">
-    Message Type 5: Directional button data transmission
+  <a href="#kept-messages" class="md-nav__link">
+    Kept Messages:
   </a>
   
 </li>
@@ -705,12 +677,9 @@
 
   <h1>API</h1>
 
-<h2 id="api">API</h2>
-<hr />
-<h2 id="message-type-1-toggle-manualautomatic-modes">Message Type 1: Toggle Manual/automatic modes</h2>
-<ul>
-<li>Incoming toggle data that will decide if the sensor data or button data drives the motors</li>
-</ul>
+<h2 id="sent-messages">Sent Messages:</h2>
+<p><strong>Message Type 1: Toggle Manual/automatic modes</strong>
+* Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system</p>
 <table>
 <thead>
 <tr>
@@ -741,50 +710,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="message-type-3-voltage-readings-for-display">Message Type 3: Voltage Readings for display</h2>
-<ul>
-<li>Should match the output from the MQTT but appears on the physical LCD (incoming data)</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Bytes 2-5</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>voltage_unit</td>
-<td>voltage_value</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>char</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>V</td>
-<td>0.000</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>V</td>
-<td>5.500</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>"V"</td>
-<td>"3.300"</td>
-</tr>
-</tbody>
-</table>
-<h2 id="message-type-5-directional-button-data-transmission">Message Type 5: Directional button data transmission</h2>
-<ul>
-<li>allows for left/right manual motor control if manual mode is on</li>
-</ul>
+<p><strong>Message Type 5: Directional button data transmission</strong>
+* allows for left/right manual motor control if manual mode is on</p>
 <table>
 <thead>
 <tr>
@@ -818,6 +745,46 @@
 <td>Example</td>
 <td>0</td>
 <td>1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="kept-messages">Kept Messages:</h2>
+<p><strong>Message Type 3: Voltage Readings for display</strong> 
+* Should match the output from the MQTT but appears on the physical LCD (incoming data)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Bytes 2-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>voltage_sensor</td>
+<td>voltage_reading</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>V</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>V</td>
+<td>5.500</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>"V"</td>
+<td>"3.300"</td>
 </tr>
 </tbody>
 </table>
