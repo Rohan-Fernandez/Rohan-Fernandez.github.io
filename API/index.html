@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#title-api" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -415,6 +420,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -424,6 +440,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#title-api" class="md-nav__link">
+    Title: API
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-1-toggle-manualautomatic-modes-button-controlled-toggle" class="md-nav__link">
+    Message Type 1: Toggle Manual/automatic modes (button controlled toggle)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-3-voltage-readings-for-display" class="md-nav__link">
+    Message Type 3: Voltage Readings for display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-5-directional-button-data-transmission-for-leftright-manual-motor-control" class="md-nav__link">
+    Message Type 5: Directional button data transmission for left/right manual motor control
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -585,6 +646,42 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#title-api" class="md-nav__link">
+    Title: API
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-1-toggle-manualautomatic-modes-button-controlled-toggle" class="md-nav__link">
+    Message Type 1: Toggle Manual/automatic modes (button controlled toggle)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-3-voltage-readings-for-display" class="md-nav__link">
+    Message Type 3: Voltage Readings for display
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-5-directional-button-data-transmission-for-leftright-manual-motor-control" class="md-nav__link">
+    Message Type 5: Directional button data transmission for left/right manual motor control
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -608,7 +705,119 @@
 
   <h1>API</h1>
 
-
+<hr />
+<h2 id="title-api">Title: API</h2>
+<h2 id="message-type-1-toggle-manualautomatic-modes-button-controlled-toggle">Message Type 1: Toggle Manual/automatic modes (button controlled toggle)</h2>
+<ul>
+<li>This will decide if the sensor data or button data drives the motors</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>auto_toggle</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-3-voltage-readings-for-display">Message Type 3: Voltage Readings for display</h2>
+<ul>
+<li>Should match the output from the MQTT but appears on the physical LCD (incoming data)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Bytes 2-5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>voltage_unit</td>
+<td>voltage_value</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>char</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>V</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>V</td>
+<td>5.500</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>"V"</td>
+<td>"3.300"</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-5-directional-button-data-transmission-for-leftright-manual-motor-control">Message Type 5: Directional button data transmission for left/right manual motor control</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>button_left</td>
+<td>button_right</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
 
 
