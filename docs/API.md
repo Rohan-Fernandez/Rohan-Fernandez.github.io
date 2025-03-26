@@ -1,4 +1,17 @@
 
+## Team Bytes
+| Byte | Function |
+|----|-------|
+| AZ | Start |
+| YB | Stop  |
+
+| Unique ID | Byte |
+|-----|-----|
+|Shon Ha| H |
+|Maximus Mathews|M|
+|Rohan Fernandez|F|
+|Shelton Larance|L|
+---------------------
 ## Sent Messages:
 
 **Message Type 1: Toggle Manual/automatic modes**
