@@ -18,37 +18,36 @@
 **Message Type 1: Toggle Manual/automatic modes**
 * Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system
 
-|               | Byte 1      |  
-|---------------|-------------|
-| Variable Name | auto_toggle |   
-| Variable Type | uint8_t     |   
-| Min Value     | 0           |   
-| Max Value     | 1           |   
-| Example       | 1           |   
+|               | Byte 1      | Byte 2 |
+|---------------|-------------|--------|
+| Variable Name | mode | mode_toggle |  
+| Variable Type | char    |  uint8_t| 
+| Min Value     | M           |   0|
+| Max Value     | M           |   1|
+| Example       | M           |   1|
+
 
 **Message Type 5: Directional button data transmission**
 * allows for left/right manual motor control if manual mode is on
 
-|               | Byte 1      | Byte 2       |
-|---------------|-------------|--------------|
-| Variable Name | button_left | button_right |
-| Variable Type | uint8_t     | uint8_t      |
-| Min Value     | 0           | 0            |
-| Max Value     | 1           | 1            |
-| Example       | 0           | 1            |
+|               | Byte 1      | Byte 2       | Byte 3    |  Byte 4 |
+|---------------|-------------|--------------|-----------|----------
+| Variable Name | L        | button_left |   R     | button_right|
+| Variable Type |  char    | uint8_t      | char        |  uint8_t |
+| Min Value     | L          | 0            | R         |  0       |
+| Max Value     | L          | 1            | R         |  1       |
+| Example       | L          | 1            | R         |  1       |
 
 ----------------
 ## Kept Messages: 
 **Message Type 3: Voltage Readings for display** 
 * Should match the output from the MQTT but appears on the physical LCD (incoming data)
 
-|               | Byte 1         | Bytes 2-5        |
+|               | Byte 1         | Byte 2-5        |
 |---------------|----------------|-----------------|
 | Variable Name | voltage_sensor | voltage_reading |
-| Variable Type | char           | float           |
-| Min Value     | V              | 0.000           |
-| Max Value     | V              | 5.500           |
-| Example       | "V"              | "3.300"           |
-
-
+| Variable Type | char           | uint16_t           |
+| Min Value     | V              | 0000           |
+| Max Value     | V              | 5400           |
+| Example       | V              | 3300          |
 
