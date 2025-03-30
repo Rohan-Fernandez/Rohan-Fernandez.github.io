@@ -777,7 +777,7 @@
 </tbody>
 </table>
 <p><strong>Message Type 5: Directional button data transmission</strong>
-* allows for left/right manual motor control if manual mode is on</p>
+* allows for left/right manual motor control if manual mode is on, originates in HMI</p>
 <table>
 <thead>
 <tr>
@@ -829,13 +829,14 @@
 <hr />
 <h2 id="kept-messages">Kept Messages:</h2>
 <p><strong>Message Type 3: Voltage Readings for display</strong> 
-* Should match the output from the MQTT but appears on the physical LCD (incoming data)</p>
+* Should match the output from the MQTT but appears on the physical LCD (incoming data)
+* Data will be acquired from all 4 different sensors for a total of 16 bytes from all 4 combined</p>
 <table>
 <thead>
 <tr>
 <th></th>
 <th>Byte 1</th>
-<th>Byte 2-5</th>
+<th>Byte 2-3</th>
 </tr>
 </thead>
 <tbody>
@@ -851,18 +852,33 @@
 </tr>
 <tr>
 <td>Min Value</td>
-<td>V</td>
+<td>S1, S2, S3, S4</td>
 <td>0000</td>
 </tr>
 <tr>
 <td>Max Value</td>
-<td>V</td>
+<td>S1, S2, S3, S4</td>
 <td>5400</td>
 </tr>
 <tr>
-<td>Example</td>
-<td>V</td>
+<td>Example S1)</td>
+<td>S1</td>
 <td>3300</td>
+</tr>
+<tr>
+<td>Example (S2)</td>
+<td>S2</td>
+<td>4200</td>
+</tr>
+<tr>
+<td>Example (S3)</td>
+<td>S3</td>
+<td>2750</td>
+</tr>
+<tr>
+<td>Example (S4)</td>
+<td>S4</td>
+<td>5000</td>
 </tr>
 </tbody>
 </table>
