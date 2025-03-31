@@ -462,15 +462,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sent-messages" class="md-nav__link">
-    Sent Messages:
+  <a href="#for-my-messages-f-is-outgoing-identifier-incoming-is-l" class="md-nav__link">
+    **For my messages: f is outgoing identifier, incoming is l
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kept-messages" class="md-nav__link">
-    Kept Messages:
+  <a href="#incoming-messages" class="md-nav__link">
+    Incoming Messages:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outgoing-messages" class="md-nav__link">
+    Outgoing Messages:
   </a>
   
 </li>
@@ -653,15 +660,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sent-messages" class="md-nav__link">
-    Sent Messages:
+  <a href="#for-my-messages-f-is-outgoing-identifier-incoming-is-l" class="md-nav__link">
+    **For my messages: f is outgoing identifier, incoming is l
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kept-messages" class="md-nav__link">
-    Kept Messages:
+  <a href="#incoming-messages" class="md-nav__link">
+    Incoming Messages:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outgoing-messages" class="md-nav__link">
+    Outgoing Messages:
   </a>
   
 </li>
@@ -720,32 +734,41 @@
 <tbody>
 <tr>
 <td>Shon Ha</td>
-<td>H</td>
+<td>h</td>
 </tr>
 <tr>
 <td>Maximus Mathews</td>
-<td>M</td>
+<td>m</td>
 </tr>
 <tr>
 <td>Rohan Fernandez</td>
-<td>F</td>
+<td>f</td>
 </tr>
 <tr>
 <td>Shelton Larance</td>
-<td>L</td>
+<td>l</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="sent-messages">Sent Messages:</h2>
-<p><strong>Message Type 1: Toggle Manual/automatic modes</strong>
-* Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system</p>
+<h2 id="for-my-messages-f-is-outgoing-identifier-incoming-is-l">**For my messages: f is outgoing identifier, incoming is l</h2>
+<h2 id="incoming-messages">Incoming Messages:</h2>
+<ul>
+<li><strong>Part 1 - Bytes 1 and 2: Toggle Manual/automatic modes</strong></li>
+<li>Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system
+*sent out to next team member after being recieved</li>
+<li><strong>Part 2 - Bytes 3-7: Voltage Readings for display</strong> </li>
+<li>Should match the output from the MQTT but appears on the physical LCD (incoming data)</li>
+<li>Data will be acquired from all 4 different sensors for a total of 16 bytes from all 4 combined</li>
+<li>Does not get sent out again</li>
+</ul>
 <table>
 <thead>
 <tr>
 <th></th>
 <th>Byte 1</th>
 <th>Byte 2</th>
+<th>Byte 3</th>
+<th>Byte 4-7</th>
 </tr>
 </thead>
 <tbody>
@@ -753,30 +776,44 @@
 <td>Variable Name</td>
 <td>mode</td>
 <td>mode_toggle</td>
+<td>voltage_sensor</td>
+<td>voltage_reading</td>
 </tr>
 <tr>
 <td>Variable Type</td>
 <td>char</td>
-<td>uint8_t</td>
+<td>char</td>
+<td>char</td>
+<td>char</td>
 </tr>
 <tr>
 <td>Min Value</td>
 <td>M</td>
 <td>0</td>
+<td>V</td>
+<td>0000</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>M</td>
 <td>1</td>
+<td>V</td>
+<td>5400</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>M</td>
 <td>1</td>
+<td>V</td>
+<td>2572</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Message Type 5: Directional button data transmission</strong>
+<hr />
+<h2 id="outgoing-messages">Outgoing Messages:</h2>
+<p><strong>Part 1 - Bytes 1-2: Mode Toggle</strong>
+* Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system</p>
+<p><strong>Part 2 Bytes 3-6: Directional button data transmission, coming from HMI (my system)</strong>
 * allows for left/right manual motor control if manual mode is on, originates in HMI</p>
 <table>
 <thead>
@@ -786,11 +823,15 @@
 <th>Byte 2</th>
 <th>Byte 3</th>
 <th>Byte 4</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Variable Name</td>
+<td>mode</td>
+<td>mode_toggle</td>
 <td>L</td>
 <td>button_left</td>
 <td>R</td>
@@ -799,12 +840,16 @@
 <tr>
 <td>Variable Type</td>
 <td>char</td>
+<td>char</td>
+<td>char</td>
 <td>uint8_t</td>
 <td>char</td>
 <td>uint8_t</td>
 </tr>
 <tr>
 <td>Min Value</td>
+<td>M</td>
+<td>0</td>
 <td>L</td>
 <td>0</td>
 <td>R</td>
@@ -812,6 +857,8 @@
 </tr>
 <tr>
 <td>Max Value</td>
+<td>M</td>
+<td>1</td>
 <td>L</td>
 <td>1</td>
 <td>R</td>
@@ -819,6 +866,8 @@
 </tr>
 <tr>
 <td>Example</td>
+<td>M</td>
+<td>1</td>
 <td>L</td>
 <td>1</td>
 <td>R</td>
@@ -827,61 +876,6 @@
 </tbody>
 </table>
 <hr />
-<h2 id="kept-messages">Kept Messages:</h2>
-<p><strong>Message Type 3: Voltage Readings for display</strong> 
-* Should match the output from the MQTT but appears on the physical LCD (incoming data)
-* Data will be acquired from all 4 different sensors for a total of 16 bytes from all 4 combined</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2-3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>voltage_sensor</td>
-<td>voltage_reading</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>char</td>
-<td>uint16_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>S1, S2, S3, S4</td>
-<td>0000</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>S1, S2, S3, S4</td>
-<td>5400</td>
-</tr>
-<tr>
-<td>Example S1)</td>
-<td>S1</td>
-<td>3300</td>
-</tr>
-<tr>
-<td>Example (S2)</td>
-<td>S2</td>
-<td>4200</td>
-</tr>
-<tr>
-<td>Example (S3)</td>
-<td>S3</td>
-<td>2750</td>
-</tr>
-<tr>
-<td>Example (S4)</td>
-<td>S4</td>
-<td>5000</td>
-</tr>
-</tbody>
-</table>
 
 
 
