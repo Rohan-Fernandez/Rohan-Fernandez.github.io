@@ -46,7 +46,7 @@
 |               | Byte 1    | Byte 2      | Byte 3      | Byte 4       | Byte 5    |  Byte 6 |
 |---------------|---------- |---------- |-------------|--------------|-----------|---------|
 | Variable Name | mode      |  mode_toggle         | L        | button_left |   R     | button_right|
-| Variable Type | char      |   char             |  char    | uint8_t      | char        |  uint8_t |
+| Variable Type | char      |   char             |  char    | char     | char        | char |
 | Min Value     | M         |   0          | L          | 0            | R         |  0       |
 | Max Value     | M         |   1         | L          | 1            | R         |  1       |
 | Example       | M         |   1           | L          | 1            | R         |  1       |
