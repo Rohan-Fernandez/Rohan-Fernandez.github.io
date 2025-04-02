@@ -12,7 +12,7 @@
 |Rohan Fernandez|f|
 |Shelton Larance|l|
 
-**For my messages: f is outgoing identifier, incoming is l
+**For my messages: incoming = lf, outgoing = fm
 ---------------------
 ## Incoming Messages:
 
