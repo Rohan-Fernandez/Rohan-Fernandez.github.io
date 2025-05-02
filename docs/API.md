@@ -19,18 +19,21 @@
 * **Part 1 - Bytes 1 and 2: Toggle Manual/automatic modes**
 * Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system
 *sent out to next team member after being recieved
-* **Part 2 - Bytes 3-7: Voltage Readings for display** 
+* **Part 2 - Bytes 3-8: Sensor 1 for display** 
 * Should match the output from the MQTT but appears on the physical LCD (incoming data)
-* Data will be acquired from all 4 different sensors for a total of 16 bytes from all 4 combined
+* Data will be acquired from the first of two different sensors, determined by the 2 byte identifier of S1
+* Does not get sent out again
+* * **Part 3 - Bytes 3-7: Sensor 1 for display** 
+* Data will be acquired from the second of two different sensors, determined by the 2 byte identifier of S2
 * Does not get sent out again
 
-|                |  Byte 1        | Byte 2          | Byte 3         | Byte 4-7        |
-|--------------- |--------------- |--------------- |----------------|-----------------|
-| Variable Name  | mode           | mode_toggle    | voltage_sensor | voltage_reading |
-| Variable Type  | char           | char           | char           |  char           |
-| Min Value      | M              | 0              | V              | 0000            |
-| Max Value      | M              | 1              | V              | 5400            |
-| Example        | M              | 1              | V              | 2572            |
+|                |  Byte 1        | Byte 2          | Byte 3-4         | Byte 4-8     | Byte 9-10 | Byte 11-15 |
+|--------------- |--------------- |--------------- |----------------|-----------------|-----------|--------|
+| Variable Name  | mode           | mode_toggle    | Sensor_1       | sensor_1_value  | Sensor_2 | sensor_2_value|
+| Variable Type  | char           | char           | char           |  char           | char     | char         |
+| Min Value      | M              | 0              | S1             | 0000            | S2       | 0000          |
+| Max Value      | M              | 1              | S1             | 9999            |S2        | 9999          |
+| Example        | M              | 1              | S1             | 2572            |S2        | 4572          |
 
 ----------------------
 ## Outgoing Messages:
