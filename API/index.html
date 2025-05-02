@@ -756,9 +756,16 @@
 <li><strong>Part 1 - Bytes 1 and 2: Toggle Manual/automatic modes</strong></li>
 <li>Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system
 *sent out to next team member after being recieved</li>
-<li><strong>Part 2 - Bytes 3-7: Voltage Readings for display</strong> </li>
+<li><strong>Part 2 - Bytes 3-8: Sensor 1 for display</strong> </li>
 <li>Should match the output from the MQTT but appears on the physical LCD (incoming data)</li>
-<li>Data will be acquired from all 4 different sensors for a total of 16 bytes from all 4 combined</li>
+<li>Data will be acquired from the first of two different sensors, determined by the 2 byte identifier of S1</li>
+<li>Does not get sent out again</li>
+<li>
+<ul>
+<li><strong>Part 3 - Bytes 3-7: Sensor 1 for display</strong> </li>
+</ul>
+</li>
+<li>Data will be acquired from the second of two different sensors, determined by the 2 byte identifier of S2</li>
 <li>Does not get sent out again</li>
 </ul>
 <table>
@@ -767,8 +774,10 @@
 <th></th>
 <th>Byte 1</th>
 <th>Byte 2</th>
-<th>Byte 3</th>
-<th>Byte 4-7</th>
+<th>Byte 3-4</th>
+<th>Byte 4-8</th>
+<th>Byte 9-10</th>
+<th>Byte 11-15</th>
 </tr>
 </thead>
 <tbody>
@@ -776,11 +785,15 @@
 <td>Variable Name</td>
 <td>mode</td>
 <td>mode_toggle</td>
-<td>voltage_sensor</td>
-<td>voltage_reading</td>
+<td>Sensor_1</td>
+<td>sensor_1_value</td>
+<td>Sensor_2</td>
+<td>sensor_2_value</td>
 </tr>
 <tr>
 <td>Variable Type</td>
+<td>char</td>
+<td>char</td>
 <td>char</td>
 <td>char</td>
 <td>char</td>
@@ -790,22 +803,28 @@
 <td>Min Value</td>
 <td>M</td>
 <td>0</td>
-<td>V</td>
+<td>S1</td>
+<td>0000</td>
+<td>S2</td>
 <td>0000</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>M</td>
 <td>1</td>
-<td>V</td>
-<td>5400</td>
+<td>S1</td>
+<td>9999</td>
+<td>S2</td>
+<td>9999</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>M</td>
 <td>1</td>
-<td>V</td>
+<td>S1</td>
 <td>2572</td>
+<td>S2</td>
+<td>4572</td>
 </tr>
 </tbody>
 </table>
