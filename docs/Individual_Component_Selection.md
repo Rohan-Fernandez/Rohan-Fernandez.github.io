@@ -92,9 +92,24 @@ Part 1: Component Selection
 | Wide voltage range                        | No Backlight is included |
 | More visually pleasing OLED Screen, rather than a more simplistic LCD |
 
-**Choice:** Option 1: NHD-C0220BIZ-FS(RGB)-FBW-3VM
+4. Songhe 128x64 I2C OLED
 
-**Rationale:** The NHD-C0220BIZ-FS(RGB)-FBW-3VM was selected due to it being a good balance of cost and effectiveness, as it has fairly solid display capapbilities and should be able to show important data while also being able to be smoothly integrated with the rest of the system (voltage, spacing, I2C, etc.).
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/NHD-0216AW-IB3.jpg?raw=true">
+
+ * $5.00 each (estimated based on similar products, as it is no longer available)
+ * [link](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/)
+    
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Designed for I2C communication             | Quite small compared to others        |
+| Can run with the same 3.3V used for the microcontroller         | No Backlight is included |
+| Familiarity with it and plentiful documentation for the ssd1306 driver |
+
+**Choice:** Option 4: Songhe 128x64 I2C OLED
+ (original choice was option 1: NHD-C0220BIZ-FS(RGB)-FBW-3VM)
+
+**Rationale:** Option 4 was selected for the final project because of changes in the project's overall scope, as less data needed to be displayed and the previous choice was proving to be difficult to integrate and program with MPlabx and the PIC, so the LCD from option 1 was swapped to this OLED from option 4, as it would still be able to perform the necessary display tasks that the project required while also being better to work with due to documentation and familiarity.
+
 
 
 
