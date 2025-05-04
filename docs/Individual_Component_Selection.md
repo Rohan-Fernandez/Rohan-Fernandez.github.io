@@ -233,9 +233,9 @@ Part 3 Microcontroller (PIC) Selection:
 | Works with MPLabX?                            | Yes     | Required.  See [Microchip Development Tools](https://www.microchip.com/development-tools)                 |
 | Works with Microchip Code Configurator?       | Refer to Screenshot Below      | Can be validated in MPLabX.  Screenshot required.                                                         |
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Pinout_CompDemo_Rev3.png?raw=true">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Pins_HMI_MPlab.png?raw=true">
 
-As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 2 GPIOs (RA2, RA3) configured to input, which represent the left and right buttons that will be involved with user controlled motor movement. The other GPIOs which is configured to output is for t a testing LED. Additonally UART pins for RX and TX are present to account for communication between devices in the project. Extra GPIOs are available and can be adapted for other purposes or to replace damaged connections.
+Shown in the above screenshot is the pin setup I made to build and program the MPlabx project for the HMI system. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 2 GPIOs (RA2, RA3) configured to input, which represent the left and right buttons that will be involved with user controlled motor movement. The other GPIO, RB1, is configured to output is for a testing LED. Additonally UART pins for RX and TX are present to account for communication between devices in the project. Extra GPIOs are available and can be adapted for other purposes or to replace damaged connections.
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
@@ -248,4 +248,7 @@ As shown in the above screenshot, in mplabx I was able to set up the currently n
 | ICSP       | 2           | 1      | MCLR = RE3 (and RB6, RB7)                             |
 | ...        | ...         | ...    | ...                            |
 
-
+---
+Part 4 Decision-making:
+---
+In regards to choosing the components and why they were selected and some later changed was due to how the project required alterations, resulting in the need for both my own and other systems involved in it to adapt. As the project developed it became fairly clear that there would need to be changes across multiple systems, one of the first changes was the reduction in quantity of buttons, as some of the previous button control was transferred to MQTT for its bidirectional requirements, along with only one motor being present, so two buttons were needed rather than four. Another major change was the replacement of the original LCD for a smaller OLED. This change was made due to issues posed in programming the original, as its complexity was problematic in getting it functional and after damage was sustained to one of my PCBs and the screen was rendered unusable, the swap was made to the OLED, which was compatible with the project's updated needs and the associated pins on the PCB from the previous LCD. This new screen (and the original) also utilized I2C, fulfilling the requriement for that type of serial communication. The choices behind other components often came down to familiarity and utility, which is why things like the 28 pin PIC18F were used instead of the 40 pin, downsized to save space, while still being the same hardware essentially. For the LM2575 3.3WU-TR regulator, it was choosen  because it is a regulator I understood well from class and would also function well in the needs of the system, which is confirmed in the power budget, which can be located in its respective tab.
