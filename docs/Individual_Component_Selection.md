@@ -94,7 +94,7 @@ Part 1: Component Selection
 
 4. Songhe 128x64 I2C OLED
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/NHD-0216AW-IB3.jpg?raw=true">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Songhe_OLED.jpg?raw=true">
 
  * $5.00 each (estimated based on similar products, as it is no longer available)
  * [link](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/)
@@ -160,7 +160,7 @@ Part 1: Component Selection
 
 **Voltage Regulators** 
 
-1. LM2575-3.3WU
+1. LM2575-3.3WU-TR
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LM2575.jpg?raw=true">
 
@@ -197,12 +197,22 @@ Part 1: Component Selection
 |Cost Effective while also providing good specs (max current, etc) |Adjustable, thus it may not be optimized for the specific 3.3 V that will be needed for the circuit (less efficient, etc)        |
 | Small size, won’t take up much space on a PCB | Inconsistencies in accuracy could be problematic for more sensitive components|
 
-Choice:  Option 1 - LM2575-3.3WU
+Choice:  Option 1 - LM2575-3.3WU-TR
 
 Explanation: Due to familiarity with this type of  voltage regulator and it meeting the needs for the user interface system, it has been selected as this system’s voltage regulator. The other chosen components should work with this voltage regulator in regards to power requirements and this in combination with it seeming more suitable than the other reviewed options make it the best choice of these three options.
 
 ---
-Part 2 Microcontroller (PIC) Selection:
+Part 2 Major Component Summary Table:
+---
+
+|Component                                   | Purpose/rationale                                                          |
+| -----------------------------------------| ---------------------------------------------------------------- |
+| PIC18F27Q10 I/SO                            | The selected microcontroller for the HMI system, it will be programmed to display incoming data through an I2C display (sensor and mode values) and take input from the buttons and pass this data onto the next system over UART|
+| LM2575-3.3WU-TR | The voltage regulator that will convert the connected 12V power source (or any other suitable power source) to the 3.3V that all of the components in the system will use for power (microcontroller, OLED, etc.|
+| Songhe 128x64 I2C OLED | The OLED that was used in class, this OLED was choosen as a replacment for the original LCD due to complications in getting the first choice working, along with changes in other systems in the project. It is compatible with the previous LCD's needed connections, only needing less of them to function (still I2C with SDA, SCL, etc) |
+
+---
+Part 3 Microcontroller (PIC) Selection:
 ---
 | PIC Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
@@ -225,11 +235,11 @@ Part 2 Microcontroller (PIC) Selection:
 
 <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Pinout_CompDemo_Rev3.png?raw=true">
 
-As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 4 GPIOs (RA1, RA2, RA3, RA4) configured to input, which represent the 4 buttons that will be involved with user controlled motor movement. The two other GPIOs which are configured to output are for the LCD's clear function and a testing LED. Additonally UART pins are present to account for communication between devices in the project. As the project progresses, extra GPIOs might be used as well, which isn't a problem, as there are plenty to spare.
+As shown in the above screenshot, in mplabx I was able to set up the currently necessary pins for my section of the project and then successfully build it. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 2 GPIOs (RA2, RA3) configured to input, which represent the left and right buttons that will be involved with user controlled motor movement. The other GPIOs which is configured to output is for t a testing LED. Additonally UART pins for RX and TX are present to account for communication between devices in the project. Extra GPIOs are available and can be adapted for other purposes or to replace damaged connections.
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       | 24           | 3      | RA1, RA2, RA3, RA4, RB1, RC2                              |
+| GPIO       | 24           | 3      | RA2, RA3, RB1                             |
 | ADC        | 24          | 0      | NA                             |
 | UART       | 2           | 1      | RC6, RC7                              |
 | SPI        | 2           | 0      | NA                             |
