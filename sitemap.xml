@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://rohan-fernandez.github.io/HMI_Schematic_and_PCB/</loc>
+         <lastmod>2025-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://rohan-fernandez.github.io/Individual_Block_diagram/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
@@ -32,11 +37,6 @@
     </url>
     <url>
          <loc>https://rohan-fernandez.github.io/Resources/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://rohan-fernandez.github.io/UI_Individual_Schematic/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
