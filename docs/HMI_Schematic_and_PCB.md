@@ -16,7 +16,7 @@ PCB Design:
 ---
 **Top View:** 
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMIPCB_Top-modified.png?raw=true">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMIPCB_Top-modified.png">
 
 **Bottom View:** 
 
