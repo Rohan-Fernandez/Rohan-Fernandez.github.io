@@ -7,7 +7,7 @@ Part 1: Component Selection
 
 1. PIC16F15213T
 
-    <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC16F15213T.jpg?raw=true">
+    <img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/PIC16F15213T.jpg">
 
     * $0.50/each
     * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC16F15213T-I-MF/12807572)
@@ -20,7 +20,7 @@ Part 1: Component Selection
 
 2. PIC18F27Q10-I/SO
 
-    <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC18F27Q10.jpg?raw=true">
+    <img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/PIC18F27Q10.jpg">
 
     * $1.45/each
     * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)
@@ -33,7 +33,7 @@ Part 1: Component Selection
 
 3. PIC18F14Q20-I/SS
 
-    <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PIC18F14Q20.jpg?raw=true">
+    <img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/PIC18F14Q20.jpg">
    
     * $0.92/each
     * [link](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F14Q20-I-SS/24617052)
@@ -55,7 +55,7 @@ Part 1: Component Selection
 
 1. NHD-C0220BIZ-FS(RGB)-FBW-3VM
 
- <img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/MFG_NHD-C0220BiZ-FS(RGB)-FBW-3VM.jpg?raw=true">
+ <img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/MFG_NHD-C0220BiZ-FS(RGB)-FBW-3VM.jpg">
 
 * $14.46/each
 * [link](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C0220BIZ-FS-RGB-FBW-3VM/3507740)
@@ -68,7 +68,7 @@ Part 1: Component Selection
 
 2. AMC0802BR-B-Y6WFDY-I2C
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/AMC0802BR-B-Y6WFDY-I2C.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/AMC0802BR-B-Y6WFDY-I2C.jpg">
 
  * $8.49/each
  * [link](https://www.digikey.com/en/products/detail/orient-display/AMC0802BR-B-Y6WFDY-I2C/22531880)
@@ -81,7 +81,7 @@ Part 1: Component Selection
 
 3. NHD-0216AW-IB3
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/NHD-0216AW-IB3.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/NHD-0216AW-IB3.jpg">
 
  * $28.49/each
  * [link](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0216AW-IB3/6198749)
@@ -94,7 +94,7 @@ Part 1: Component Selection
 
 4. Songhe 128x64 I2C OLED
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Songhe_OLED.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/Songhe_OLED.jpg">
 
  * $5.00 each (estimated based on similar products, as it is no longer available)
  * [link](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/)
@@ -117,7 +117,7 @@ Part 1: Component Selection
 
 1. 3491 (Adafruit Pushbutton)
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/MFG_3491.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/MFG_3491.jpg">
 
 
  * $ 2.50 / each
@@ -131,7 +131,7 @@ Part 1: Component Selection
 
 2. PRT-14460 (Spark-fun Electronics)
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/PRT-14460.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/PRT-14460.jpg">
 
  * $ 1.75 / pack, $ 0.44/button
  * [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-14460/7915747)
@@ -144,7 +144,7 @@ Part 1: Component Selection
 
 3. 1010 (Adafruit square button pack)
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/1010.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/1010.jpg">
 
  * $ 5.95 / pack, $ 0.40 / button
  * [link](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1010/7244937)
@@ -162,7 +162,7 @@ Part 1: Component Selection
 
 1. LM2575-3.3WU-TR
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LM2575.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/LM2575.jpg">
 
 * $1.75 / each
 * [link](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)
@@ -175,7 +175,7 @@ Part 1: Component Selection
 
 2.  LM2674M-3.3
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LM2674M_3.3.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/LM2674M_3.3.jpg">
 
 * $ 3.97 / each
 * [link](https://www.digikey.com/en/products/detail/texas-instruments/LM2674M-3-3-NOPB/287129)
@@ -187,7 +187,7 @@ Part 1: Component Selection
 
 3. LMR51430YFDDCR
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/LMR51430YFDDCR.jpg?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/LMR51430YFDDCR.jpg">
 
 * $ 1.29 / each
 * [link](https://www.digikey.com/en/products/detail/texas-instruments/LMR51430YFDDCR/17878338)
@@ -233,7 +233,7 @@ Part 3 Microcontroller (PIC) Selection:
 | Works with MPLabX?                            | Yes     | Required.  See [Microchip Development Tools](https://www.microchip.com/development-tools)                 |
 | Works with Microchip Code Configurator?       | Refer to Screenshot Below      | Can be validated in MPLabX.  Screenshot required.                                                         |
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Pins_HMI_MPlab.png?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/Pins_HMI_MPlab.png">
 
 Shown in the above screenshot is the pin setup I made to build and program the MPlabx project for the HMI system. The main pins are RC3 and RC4 for the I2C SCL and SDA pins respectively along with 2 GPIOs (RA2, RA3) configured to input, which represent the left and right buttons that will be involved with user controlled motor movement. The other GPIO, RB1, is configured to output is for a testing LED. Additonally UART pins for RX and TX are present to account for communication between devices in the project. Extra GPIOs are available and can be adapted for other purposes or to replace damaged connections.
 
