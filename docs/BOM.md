@@ -1,5 +1,5 @@
 ## BOM Table:
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Updated%20BOM.png?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/Updated%20BOM.png">
 
 **(Click on image to zoom in)**
 
