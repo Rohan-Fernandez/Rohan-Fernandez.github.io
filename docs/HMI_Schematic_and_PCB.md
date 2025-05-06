@@ -17,12 +17,12 @@ PCB Design:
 ---
 **Top View:** 
 
-<img src="/Images/HMIPCB_Top-modified.png">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMIPCB_Top-modified.png?raw=true">
 
 
 **Bottom View:** 
 
-<img src="/Images/HMI_Bottom-modified.png">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMI_Bottom-modified.png?raw=true">
 
 ---
 Fabricated PCB Images:
