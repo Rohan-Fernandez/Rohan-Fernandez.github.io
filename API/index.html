@@ -479,13 +479,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#for-my-messages-incoming-lf-outgoing-fm" class="md-nav__link">
-    **For my messages: incoming = lf, outgoing = fm
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#incoming-messages" class="md-nav__link">
     Incoming Messages:
   </a>
@@ -696,13 +689,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#for-my-messages-incoming-lf-outgoing-fm" class="md-nav__link">
-    **For my messages: incoming = lf, outgoing = fm
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#incoming-messages" class="md-nav__link">
     Incoming Messages:
   </a>
@@ -786,24 +772,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="for-my-messages-incoming-lf-outgoing-fm">**For my messages: incoming = lf, outgoing = fm</h2>
+<p><strong>For my messages: incoming = lf, outgoing = fm</strong></p>
+<hr />
 <h2 id="incoming-messages">Incoming Messages:</h2>
 <ul>
 <li><strong>Part 1 - Bytes 1 and 2: Toggle Manual/automatic modes</strong></li>
-<li>Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system
-*sent out to next team member after being recieved</li>
-<li><strong>Part 2 - Bytes 3-8: Sensor 1 for display</strong> </li>
-<li>Should match the output from the MQTT but appears on the physical LCD (incoming data)</li>
-<li>Data will be acquired from the first of two different sensors, determined by the 2 byte identifier of S1</li>
-<li>Does not get sent out again</li>
-<li>
-<ul>
-<li><strong>Part 3 - Bytes 3-7: Sensor 1 for display</strong> </li>
+<li>Incoming toggle data that will decide if the sensor data or button data drives the motors, data will be sent to sensor system</li>
+<li>Sent out to next team member after being recieved</li>
 </ul>
-</li>
-<li>Data will be acquired from the second of two different sensors, determined by the 2 byte identifier of S2</li>
-<li>Does not get sent out again</li>
-</ul>
+<p><strong>Part 2 - Bytes 3-8: Sensor 1 for display</strong> 
+* Should match the output from the MQTT but appears on the physical LCD (incoming data)
+* Data will be acquired from the first of two different sensors, determined by the 2 byte identifier of S1
+* Does not get sent out again</p>
+<p><strong>Part 3 - Bytes 9-14: Sensor 2 for display</strong> 
+* Data will be acquired from the second of two different sensors, determined by the 2 byte identifier of S2
+* Does not get sent out again</p>
 <table>
 <thead>
 <tr>
@@ -811,9 +794,9 @@
 <th>Byte 1</th>
 <th>Byte 2</th>
 <th>Byte 3-4</th>
-<th>Byte 4-8</th>
+<th>Byte 5-8</th>
 <th>Byte 9-10</th>
-<th>Byte 11-15</th>
+<th>Byte 11-14</th>
 </tr>
 </thead>
 <tbody>
