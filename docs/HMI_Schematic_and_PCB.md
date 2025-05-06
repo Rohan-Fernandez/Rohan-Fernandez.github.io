@@ -2,7 +2,7 @@
 ---
 Important Note: 
 ---
-The following images and files correspond to the fabricated board, some parts were hotwired due to changes or replacements to original parts
+The following images and files correspond to the fabricated board, some parts were wired through jumper cables due to changes or replacements to original parts, refer to version 2.0 for more details.
 
 ---
 Schematic Design:
@@ -60,3 +60,4 @@ List of Links for further viewing:
 ---
 * [Schematic PDF Download Link](https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/User_Interface_Schematic.pdf)
 * [Click here to download a zip of all ECAD Files](https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/raw/refs/heads/main/Images/UI%20Board%20and%20Schematic%20Files.zip)
+* [Click here to download a zip of the Gerber Manufacturing files](https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/raw/refs/heads/main/Images/RohanFernandez311.zip)
