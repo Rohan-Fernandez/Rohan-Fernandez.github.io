@@ -7,7 +7,8 @@ The following images and files correspond to the fabricated board, some parts we
 ---
 Schematic Design:
 ---
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMISchematicFinal.png">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMISchematicFinal.png?raw=true">
+
 
 Note: Click the image to zoom in
 
@@ -16,7 +17,8 @@ PCB Design:
 ---
 **Top View:** 
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMIPCB_Top-modified.png">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/HMIPCB_Top-modified.png?raw=true">
+
 
 **Bottom View:** 
 
@@ -27,17 +29,21 @@ Fabricated PCB Images:
 ---
 **Final Board's top: (note: the OLED and buttons are jumped out from the board)**
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/BoardTOP.png">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/BoardTOP.png?raw=true">
+
 
 **Final Board's Bottom:**
 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/FinalBoardBottom.jpg">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/FinalBoardBottom.jpg?raw=true">
+
 
 **The original version:** 
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/OriginalBoardSoldered.jpg">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/OriginalBoardSoldered.jpg?raw=true">
+
 
 **The LCD's replacement, an externally connected OLED:**
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Board_JumpedOLED.jpg">
+<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Board_JumpedOLED.jpg?raw=true">
+
 
 ---
 Schematic Functionality:
