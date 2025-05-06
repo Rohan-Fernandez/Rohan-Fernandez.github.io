@@ -1,4 +1,4 @@
-<img src="https://github.com/Rohan-Fernandez/Rohan-Fernandez.github.io/blob/main/Images/Updated%20Power%20Budget.png?raw=true">
+<img src="https://raw.githubusercontent.com/Rohan-Fernandez/Rohan-Fernandez.github.io/refs/heads/main/Images/Updated%20Power%20Budget.png">
 
 ## Updated Power Budget Explanation:
 ------------------------------
